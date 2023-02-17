@@ -1,8 +1,8 @@
 public class Main {
     private static final int EMPLOYEE_AMOUNT = 10;
+    static Employee[] employees = new Employee[EMPLOYEE_AMOUNT];
 
     public static void main(String[] args) {
-        Employee[] employees = new Employee[EMPLOYEE_AMOUNT];
         employees[0] = new Employee("Arnold", "Schwarzenegger", 1, 131_000);
         employees[1] = new Employee("Sylvester", "Stallone", 3, 126_000);
         employees[2] = new Employee("Jason", "Statham", 5, 125_000);
