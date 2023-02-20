@@ -4,7 +4,7 @@ public class Employee {
     private final String firstName;
     private final String secondName;
     private int department;
-    private double salary;
+    private static double salary;
     //    private int id = 0;  why does not work??
     private int id;
     private static int counter;
@@ -35,7 +35,7 @@ public class Employee {
         this.department = department;
     }
 
-    public double getSalary() {
+    public static double getSalary() {
         return salary;
     }
 

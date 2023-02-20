@@ -27,10 +27,10 @@ public class Main {
         System.out.println("Average salary of actors is " + actorAverageSalary(employees));
         System.out.println();
         printActorFullName(employees);
-
-
+        System.out.println();
 
     }
+
 
     private static void printEmployee(Employee[] employees) {
         for (Employee actor : employees) {
@@ -41,7 +41,7 @@ public class Main {
     private static double getSumSalary(Employee[] employees) {
         double salary = 0;
         for (Employee salarySum : employees) {
-            salary += salarySum.getSalary();
+            salary += Employee.getSalary();
         }
         return salary;
     }
@@ -49,8 +49,8 @@ public class Main {
     private static double findMaxSalary(Employee[] employees) {
         double maxSalary = 0;
         for (Employee salary : employees) {
-            if (salary.getSalary() > maxSalary) {
-                maxSalary = salary.getSalary();
+            if (Employee.getSalary() > maxSalary) {
+                maxSalary = Employee.getSalary();
             }
         }
         return maxSalary;
@@ -59,7 +59,7 @@ public class Main {
     private static Employee actorMaxSalary(Employee[] employees) {
         Employee actorSalary = employees[0];
         for (Employee salary : employees) {
-            if (salary.getSalary() > actorSalary.getSalary()) {
+            if (Employee.getSalary() > Employee.getSalary()) {
                 actorSalary = salary;
             }
         }
@@ -69,7 +69,7 @@ public class Main {
     private static Employee actorMinSalary(Employee[] employees) {
         Employee actorSalary = employees[0];
         for (Employee salary : employees) {
-            if (salary.getSalary() < actorSalary.getSalary()) {
+            if (Employee.getSalary() < Employee.getSalary()) {
                 actorSalary = salary;
             }
         }
